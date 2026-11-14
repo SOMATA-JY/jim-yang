@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xianan Jim Yang</title>
+<meta name="description" content="Xianan Jim Yang — PhD student at the University of St Andrews. Mathematical oncology, computational biology, dynamical systems.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d1d1f'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='700' text-anchor='middle' fill='%23fff'%3EJ%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="#/about">Xianan Jim Yang</a>
+  <button type="button" aria-label="Menu"><span></span></button>
+</header>
+
+<aside class="sidebar">
+  <a class="brand" href="#/about"><b>Xianan Jim Yang</b><span>Mathematical oncology</span></a>
+  <nav class="tree" aria-label="Site">
+    <ul>
+      <li class="group" data-group="about">
+        <div class="row"><button class="chev" type="button" aria-label="Toggle About"></button><a href="#/about">About</a></div>
+        <div class="sub"><ul>
+          <li><a href="#/about/hello">Hello</a></li>
+          <li><a href="#/about/background">Background</a></li>
+          <li><a href="#/about/contact">Contact</a></li>
+        </ul></div>
+      </li>
+      <li class="group" data-group="projects">
+        <div class="row"><button class="chev" type="button" aria-label="Toggle Projects"></button><a href="#/projects">Projects</a></div>
+        <div class="sub"><ul>
+          <li><a href="#/projects/somata">SOMATA</a></li>
+          <li><a href="#/projects/metastasis">Where metastases land</a></li>
+          <li><a href="#/projects/virus">Cancer-killing viruses</a></li>
+          <li><a href="#/projects/thermal">Heating a tumour</a></li>
+          <li><a href="#/projects/waves">Advance or retreat</a></li>
+          <li><a href="#/projects/vessels">Vessels and liver metastases</a></li>
+          <li><a href="#/projects/meshes">From equations to meshes</a></li>
+          <li><a href="#/projects/atrium">A virtual atrium</a></li>
+        </ul></div>
+      </li>
+      <li class="group" data-group="beyond">
+        <div class="row"><button class="chev" type="button" aria-label="Toggle Beyond research"></button><a href="#/beyond">Beyond research</a></div>
+        <div class="sub"><ul>
+          <li><a href="#/beyond/hobbies">Hobbies</a></li>
+          <li><a href="#/beyond/facts">Odd facts</a></li>
+        </ul></div>
+      </li>
+    </ul>
+  </nav>
+  <p class="side-foot">© 2026 Xianan Jim Yang</p>
+</aside>
+
+<main>
+
+<!-- ======================= ABOUT ======================= -->
+<section class="page" data-route="about">
+  <div class="hero block" data-anchor="hello">
+    <div>
+      <p class="eyebrow">PhD student · University of St Andrews</p>
+      <h1>Hello, I’m Jim.</h1>
+      <p class="intro">I build mathematical and computational models of cancer: how a tumour grows, how it spreads to other organs, and how it responds to therapy.</p>
+      <ul class="chips">
+        <li>Mathematical Oncology</li>
+        <li>Computational Biology</li>
+        <li>Ecosystems and Dynamical Systems</li>
+        <li>AI for Biology and Mathematics</li>
+      </ul>
+    </div>
+    <img class="photo" src="images/photo.jpg" width="960" height="1200" alt="Xianan Jim Yang in St Andrews">
+  </div>
+
+  <div class="block" data-anchor="background">
+    <h2>Background</h2>
+    <ol class="timeline">
+      <li><span class="when">2023 — now</span><div><b>University of St Andrews</b><span class="what">Master’s, then PhD. Supervised by Dr Nikolaos Sfakianakis and Prof. Mark Chaplain.</span></div></li>
+      <li><span class="when">2019 — 2023</span><div><b>University of Nottingham</b><span class="what">Undergraduate studies in Mathematics and Applied Mathematics.</span></div></li>
+      <li><span class="when">Earlier</span><div><b>Jiujiang No. 1 High School</b><span class="what">Jiangxi, China.</span></div></li>
+    </ol>
+  </div>
+
+  <div class="block" data-anchor="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <a href="mailto:jimyangresearch@gmail.com"><small>Personal</small><b>jimyangresearch@gmail.com</b></a>
+      <a href="mailto:xy60@st-andrews.ac.uk"><small>University</small><b>xy60@st-andrews.ac.uk</b></a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PROJECTS ======================= -->
+<section class="page" data-route="projects">
+  <p class="eyebrow">Projects</p>
+  <h1>What I work on.</h1>
+  <p class="lead">Eight projects, past and present. Most are about cancer. Two are not.</p>
+
+  <div class="cards">
+    <a class="card" href="#/projects/somata">
+      <div class="media light"><picture><source media="(prefers-color-scheme: dark)" srcset="images/somata-banner-dark.svg"><img src="images/somata-banner-light.svg" alt="" style="object-position:13% 50%"></picture></div>
+      <div class="body"><small>Flagship · Open source</small><b>SOMATA</b><span>Tumours growing inside real organs, cell by cell.</span></div>
+    </a>
+    <a class="card" href="#/projects/metastasis">
+      <div class="media light"><img src="images/thumb-ode.jpg" alt=""></div>
+      <div class="body"><small>Mathematical model</small><b>Where metastases land</b><span>Why each cancer prefers certain organs.</span></div>
+    </a>
+    <a class="card" href="#/projects/virus">
+      <div class="media"><img src="images/thumb-virus.jpg" alt=""></div>
+      <div class="body"><small>Therapy</small><b>Cancer-killing viruses</b><span>Why virus therapy can stall at a tumour’s dead core.</span></div>
+    </a>
+    <a class="card" href="#/projects/thermal">
+      <div class="media"><img src="images/thumb-thermal.jpg" alt=""></div>
+      <div class="body"><small>Therapy · Prototype</small><b>Heating a tumour from the inside</b><span>Thermal therapy, simulated cell by cell.</span></div>
+    </a>
+    <a class="card" href="#/projects/waves">
+      <div class="media plain"><svg class="sch" viewBox="0 0 440 250" role="img" aria-label="Schematic of a retreating population edge">
+    <line class="axis" x1="30" y1="200" x2="415" y2="200"/>
+    <path class="s" d="M30,150 L270,150 C310,150 335,165 360,200"/>
+    <path class="i" d="M30,115 L285,115 C318,115 322,64 338,64 C352,64 355,130 360,200"/>
+    <line class="edge" x1="360" y1="46" x2="360" y2="200"/>
+    <line class="arrow" x1="408" y1="60" x2="380" y2="60"/><polygon class="head" points="380,54 368,60 380,66"/>
+  </svg></div>
+      <div class="body"><small>Mathematical biology</small><b>Advance or retreat</b><span>When an infection turns expansion into retreat.</span></div>
+    </a>
+    <a class="card" href="#/projects/vessels">
+      <div class="media light"><img src="images/thumb-vessel.jpg" alt=""></div>
+      <div class="body"><small>Medical imaging</small><b>Vessels and liver metastases</b><span>Do blood vessels decide where metastases grow?</span></div>
+    </a>
+    <a class="card" href="#/projects/meshes">
+      <div class="media plain"><svg class="sch" viewBox="0 0 440 250" role="img" aria-label="Schematic of a mesh refined at a sharp layer">
+    <line class="axis" x1="30" y1="190" x2="410" y2="190"/>
+    <line class="axis" x1="410" y1="44" x2="410" y2="190"/>
+    <path class="s" d="M30,74 C180,72 300,70 350,78 C385,86 402,132 410,190"/>
+    <g class="tick">
+      <line x1="30" y1="190" x2="30" y2="204"/><line x1="95" y1="190" x2="95" y2="204"/>
+      <line x1="152" y1="190" x2="152" y2="204"/><line x1="202" y1="190" x2="202" y2="204"/>
+      <line x1="245" y1="190" x2="245" y2="204"/><line x1="282" y1="190" x2="282" y2="204"/>
+      <line x1="313" y1="190" x2="313" y2="204"/><line x1="339" y1="190" x2="339" y2="204"/>
+      <line x1="360" y1="190" x2="360" y2="204"/><line x1="377" y1="190" x2="377" y2="204"/>
+      <line x1="390" y1="190" x2="390" y2="204"/><line x1="399" y1="190" x2="399" y2="204"/>
+      <line x1="405" y1="190" x2="405" y2="204"/><line x1="410" y1="190" x2="410" y2="204"/>
+    </g>
+  </svg></div>
+      <div class="body"><small>AI for mathematics</small><b>From equations to meshes</b><span>Can a language model read an equation like an expert?</span></div>
+    </a>
+    <a class="card" href="#/projects/atrium">
+      <div class="media light"><img src="images/thumb-atrium.jpg" alt=""></div>
+      <div class="body"><small>Cardiac modelling</small><b>A virtual atrium</b><span>Electrical waves in a model of the heart.</span></div>
+    </a>
+  </div>
+</section>
+
+<!-- ---------- SOMATA ---------- -->
+<section class="page" data-route="projects/somata">
+  <a class="back" href="#/projects">Projects</a>
+  <p class="eyebrow">Agent-based modelling · Open source</p>
+  <h1>SOMATA</h1>
+  <p class="lead">Tumours growing inside real organs.</p>
+
+  <figure class="figure reveal">
+    <div class="frame bare"><picture><source media="(prefers-color-scheme: dark)" srcset="images/somata-banner-dark.svg"><img src="images/somata-banner-light.svg" alt="SOMATA: tumour growth and metastasis on real organ geometry"></picture></div>
+  </figure>
+
+  <div class="prose">
+    <h2>The idea</h2>
+    <p>Most cell-level tumour models grow their tumour in a box. A real tumour grows inside an organ, and the shape of that organ decides where the tumour can go.</p>
+    <p>SOMATA — Spatial Organ-resolved Metastasis with Agents on Three-dimensional Anatomy — follows a tumour cell by cell, from its first divisions to its spread to other organs, on real anatomy. Every cancer cell is one agent. It grows, divides, pushes its neighbours, moves and dies in three dimensions.</p>
+
+    <h2>How it works</h2>
+    <h3>1 · Geometry</h3>
+    <p>An organ segmented from CT, MRI or a surface mesh becomes a signed-distance field: a map that tells every point how far it is from the organ surface. Cells cannot cross that surface. The library covers 16 primary sites and 20 secondary sites, most of them with a real shape.</p>
+  </div>
+  <figure class="figure reveal">
+    <div class="organs">
+      <div><img src="images/organ-kidney.jpg" alt="Kidney surface" loading="lazy"><span>Kidney</span></div>
+      <div><img src="images/organ-lung.jpg" alt="Lung surface" loading="lazy"><span>Lung</span></div>
+      <div><img src="images/organ-pancreas.jpg" alt="Pancreas surface" loading="lazy"><span>Pancreas</span></div>
+      <div><img src="images/organ-stomach.jpg" alt="Stomach surface" loading="lazy"><span>Stomach</span></div>
+      <div><img src="images/organ-colon.jpg" alt="Colon surface" loading="lazy"><span>Colon</span></div>
+      <div><img src="images/organ-spleen.jpg" alt="Spleen surface" loading="lazy"><span>Spleen</span></div>
+      <div><img src="images/organ-heart.jpg" alt="Heart surface" loading="lazy"><span>Heart</span></div>
+      <div><img src="images/organ-brain.jpg" alt="Brain surface" loading="lazy"><span>Brain</span></div>
+    </div>
+    <figcaption>Eight organ surfaces from the library, rebuilt from medical images. Source shapes: TotalSegmentator dataset (CC BY 4.0).</figcaption>
+  </figure>
+
+  <div class="prose">
+    <h3>2 · Cells and nutrient</h3>
+    <p>Cells consume a nutrient that enters at the tumour surface. Deep inside, the supply runs out. Cells there starve, die, and form a necrotic core.</p>
+  </div>
+  <figure class="figure reveal">
+    <div class="frame dark"><img src="images/somata-pancreas.jpg" data-zoom alt="Simulated tumour inside a pancreas" loading="lazy"></div>
+    <figcaption>A simulated tumour confined by the shape of a pancreas. Left: living cells. Right: the necrotic core inside the same tumour.</figcaption>
+  </figure>
+
+  <div class="prose">
+    <h3>3 · Layers</h3>
+    <p>Between the dividing rim and the dead core lies a band of quiescent cells: alive, but no longer dividing. SOMATA resolves all three layers.</p>
+  </div>
+  <figure class="figure reveal">
+    <div class="frame dark"><img src="images/somata-layers.jpg" data-zoom alt="Proliferating, quiescent and necrotic layers of one simulated tumour" loading="lazy"></div>
+    <figcaption>One tumour, three layers. Left to right: proliferating cells, quiescent cells, necrotic core. Shown in a test domain.</figcaption>
+  </figure>
+
+  <div class="prose">
+    <h3>4 · Spread</h3>
+    <p>Some cells leave the primary tumour and travel to other organs. Where a few of them survive and settle, a secondary tumour begins.</p>
+
+    <h2>Open source</h2>
+    <p>SOMATA is being released in stages. The first stage, the geometry toolkit, is public. Much of the rest is already built and tested, and will be uploaded step by step.</p>
+  </div>
+  <figure class="figure reveal">
+    <div class="frame bare"><picture><source media="(prefers-color-scheme: dark)" srcset="images/somata-workflow-dark.svg"><img src="images/somata-workflow-light.svg" alt="The six stages of SOMATA: geometry, cells, nutrient, phenotype, spread, therapy" loading="lazy"></picture></div>
+    <figcaption>The six stages of the SOMATA workflow.</figcaption>
+  </figure>
+  <div class="links">
+    <a href="https://github.com/SOMATA-JY" target="_blank" rel="noopener">SOMATA on GitHub</a>
+    <a class="ghost" href="https://github.com/SOMATA-JY/organ-sdf-toolkit" target="_blank" rel="noopener">organ-sdf-toolkit</a>
+  </div>
+
+  <div class="prose">
+    <h2>Where it is going</h2>
+    <p>One reproducible, open pipeline: from a medical image, to a tumour growing in that anatomy, to virtual tests of therapy.</p>
+  </div>
+</section>
+
+<!-- ---------- ODE-OPT ---------- -->
+<section class="page" data-route="projects/metastasis">
+  <a class="back" href="#/projects">Projects</a>
+  <p class="eyebrow">Mathematical model · Book chapter, in revision</p>
+  <h1>Where metastases land</h1>
+  <p class="lead">Why each cancer prefers certain organs.</p>
+
+  <div class="prose">
+    <h2>The question</h2>
+    <p>Cancers do not spread at random. Each type has organs it reaches often and organs it rarely touches. The pattern has been known for more than a century. We ask whether a small mechanistic model can reproduce it.</p>
+  </div>
+  <figure class="figure reveal">
+    <div class="frame"><img src="images/ode-data-vs-model.png" data-zoom alt="Heat maps of metastasis frequency: clinical data and model" loading="lazy"></div>
+    <figcaption>How often 16 primary cancers (rows) spread to 20 sites (columns). Left: clinical autopsy data, redrawn from Budczies et al. Right: the calibrated model.</figcaption>
+  </figure>
+
+  <div class="prose">
+    <h2>The model</h2>
+    <p>The model has three parts. A primary tumour grows, and some of its cells become mobile. Those cells are shed at random to twenty possible sites. At each site, a new colony survives only if it passes a critical size.</p>
+    <p>One number for each cancer–site pair, an affinity weight, sets how welcoming the site is. We calibrate the weights against a published autopsy cohort.</p>
+  </div>
+  <figure class="figure reveal">
+    <div class="frame"><img src="images/ode-weights.png" data-zoom alt="Heat map of fitted organ-affinity weights" loading="lazy"></div>
+    <figcaption>The affinity weight inferred for each cancer–site pair. Hatched cells have no clinical cases to calibrate against.</figcaption>
+  </figure>
+
+  <div class="prose">
+    <h2>What it shows</h2>
+    <p>The calibrated model reproduces the pattern for all sixteen cancers. It also explains why the pattern is so sharp. Because a colony must pass a threshold to survive, a small difference in affinity becomes a large difference in how often metastases appear.</p>
+  </div>
+  <figure class="figure narrow reveal">
+    <div class="frame"><img src="images/ode-threshold.png" data-zoom alt="Simulated frequency against affinity weight" loading="lazy"></div>
+    <figcaption>Each dot is one cancer–site pair. A modest increase in affinity moves a site from rare to almost certain.</figcaption>
+  </figure>
+  <p class="note">Joint work with collaborators. The model is calibrated to reproduce observed patterns; it is not a predictor for individual patients.</p>
+</section>
+
+<!-- ---------- VIRUS ---------- -->
+<section class="page" data-route="projects/virus">
+  <a class="back" href="#/projects">Projects</a>
+  <p class="eyebrow">Agent-based modelling · Manuscript in preparation</p>
+  <h1>Cancer-killing viruses, cell by cell</h1>
+  <p class="lead">Why virus therapy can stall, and what a tumour’s dead core has to do with it.</p>
+
+  <div class="prose">
+    <h2>The question</h2>
+    <p>Oncolytic viruses infect cancer cells, multiply inside them, and burst them open. In principle the infection should sweep through a tumour. In practice it often stops short. Why?</p>
+
+    <h2>The model</h2>
+    <p>We simulate every cancer cell and every virus particle in three dimensions. Cells grow, divide and compete for nutrient. Virus particles drift, infect the cells they touch, and are released again when those cells burst. Later versions add immune cells.</p>
+  </div>
+  <figure class="figure narrow reveal">
+    <div class="frame dark"><img src="images/virus-3d.jpg" data-zoom alt="Virus particles and tumour cell clusters in three dimensions" loading="lazy"></div>
+    <figcaption>Virus particles (red) spreading through clusters of tumour cells (green).</figcaption>
+  </figure>
+  <figure class="figure reveal">
+    <div class="frame"><img src="images/virus-population.png" data-zoom alt="Counts of uninfected cells, infected cells and virus particles over time" loading="lazy"></div>
+    <figcaption>One treated tumour over time. The tumour grows, the virus catches up, and the tumour collapses.</figcaption>
+  </figure>
+
+  <div class="prose">
+    <h2>What it shows</h2>
+    <p>A large tumour carries a core of dead material. If nothing clears that material, the tumour cannot shrink below it: the dead core sets a floor. Small tumours without a core are usually cleared. Large ones are not, unless the debris is removed fast enough.</p>
+  </div>
+  <figure class="figure reveal">
+    <div class="frame"><img src="images/virus-slices.png" data-zoom alt="Four slices through a simulated tumour during virus therapy" loading="lazy"></div>
+    <figcaption>Slices through one simulated tumour during therapy. The tumour shrinks until its surface meets the dead core, and stops there.</figcaption>
+  </figure>
+</section>
+
+<!-- ---------- THERMAL ---------- -->
+<section class="page" data-route="projects/thermal">
+  <a class="back" href="#/projects">Projects</a>
+  <p class="eyebrow">Agent-based modelling · Prototype</p>
+  <h1>Heating a tumour from the inside</h1>
+  <p class="lead">Thermal therapy, simulated cell by cell.</p>
+
+  <div class="prose">
+    <h2>The question</h2>
+    <p>Thermal ablation destroys tumour tissue with heat delivered through thin probes. Whether it works depends on where the heat reaches, and on what the surviving cells do next.</p>
+
+    <h2>The model</h2>
+    <p>A heat equation is coupled to the individual-cell tumour model. Probe tips warm the tissue around them. A cell that stays too hot for too long dies. Dead cells form a solid region that living cells cannot enter.</p>
+  </div>
+  <figure class="figure reveal">
+    <div class="frame dark"><img src="images/thermal-overview.jpg" data-zoom alt="Living cells, dead region, temperature field and cell counts for a tumour heated by two probes" loading="lazy"></div>
+    <figcaption>Two heated probes inside a growing tumour. Top: living cells and the dead region. Bottom: the temperature field and the cell counts over time.</figcaption>
+  </figure>
+
+  <div class="prose">
+    <h2>Where it stands</h2>
+    <p>This is an early prototype. In the first runs, two probes create two dead zones, while the cells outside them keep dividing. That is exactly the question the model is built to ask: how many probes, where, and for how long?</p>
+  </div>
+</section>
+
+<!-- ---------- SIS–ALLEE ---------- -->
+<section class="page" data-route="projects/waves">
+  <a class="back" href="#/projects">Projects</a>
+  <p class="eyebrow">Mathematical biology · Manuscript in preparation</p>
+  <h1>When infection turns expansion into retreat</h1>
+  <p class="lead">A population spreads. A disease spreads inside it. Which one wins at the edge?</p>
+
+  <div class="prose">
+    <h2>The question</h2>
+    <p>A population expands into new territory while an infection spreads through it from behind. Can the infection stop the expansion, or even reverse it?</p>
+
+    <h2>The model</h2>
+    <p>We study a reaction–diffusion model in which individuals are either susceptible or infected, and recover back to susceptible. The population needs a minimum density to grow, and the edge of its range is free to move.</p>
+  </div>
+  <figure class="figure reveal">
+    <div class="pair">
+      <div class="panel"><svg class="sch" viewBox="0 0 440 250" role="img" aria-label="Infection far behind the edge; the edge advances">
+    <line class="axis" x1="30" y1="200" x2="415" y2="200"/>
+    <path class="s" d="M30,150 L118,150 C150,150 158,80 190,80 L318,80 C345,80 352,125 360,200"/>
+    <path class="i" d="M30,115 L112,115 C150,115 160,200 198,200"/>
+    <line class="edge" x1="360" y1="46" x2="360" y2="200"/>
+    <line class="arrow" x1="368" y1="60" x2="396" y2="60"/><polygon class="head" points="396,54 408,60 396,66"/>
+    <text class="strong" x="414" y="36" text-anchor="end">edge advances</text>
+    <text x="254" y="68" text-anchor="middle">healthy</text>
+    <text x="34" y="104">infected</text>
+    <text x="30" y="228">inside the range</text>
+    <text x="414" y="228" text-anchor="end">empty</text>
+  </svg></div>
+      <div class="panel"><svg class="sch" viewBox="0 0 440 250" role="img" aria-label="Infection at the edge; the edge retreats">
+    <line class="axis" x1="30" y1="200" x2="415" y2="200"/>
+    <path class="s" d="M30,150 L270,150 C310,150 335,165 360,200"/>
+    <path class="i" d="M30,115 L285,115 C318,115 322,64 338,64 C352,64 355,130 360,200"/>
+    <line class="edge" x1="360" y1="46" x2="360" y2="200"/>
+    <line class="arrow" x1="408" y1="60" x2="380" y2="60"/><polygon class="head" points="380,54 368,60 380,66"/>
+    <text class="strong" x="414" y="36" text-anchor="end">edge retreats</text>
+    <text x="34" y="104">infected</text>
+    <text x="34" y="174">healthy</text>
+    <text x="262" y="58" text-anchor="end">thin infected layer</text>
+    <line class="lead-line" x1="268" y1="55" x2="322" y2="66"/>
+    <text x="30" y="228">inside the range</text>
+    <text x="414" y="228" text-anchor="end">empty</text>
+  </svg></div>
+    </div>
+    <figcaption>A schematic, not simulation output. Left: the infection is still far behind, and the edge of the range advances. Right: the infection has reached the edge, and the edge retreats.</figcaption>
+  </figure>
+
+  <div class="prose">
+    <h2>What it shows</h2>
+    <p>When the infection reaches the edge, the edge can turn around: advance becomes retreat. And the outcome is not fixed by the parameters alone. Where the infection starts can decide between the two.</p>
+  </div>
+  <p class="note">Joint work with collaborators at the University of Nottingham.</p>
+</section>
+
+<!-- ---------- VESSELS ---------- -->
+<section class="page" data-route="projects/vessels">
+  <a class="back" href="#/projects">Projects</a>
+  <p class="eyebrow">Medical image analysis · Submitted to PLOS ONE</p>
+  <h1>Do blood vessels decide where liver metastases grow?</h1>
+  <p class="lead">Testing the simplest explanation first.</p>
+
+  <div class="prose">
+    <h2>The question</h2>
+    <p>Metastases in the liver are found more often on its right side. The usual explanation is blood flow. But the right side is also simply larger. The flow idea had not been tested against each patient’s own liver volumes.</p>
+  </div>
+  <figure class="figure reveal">
+    <div class="frame"><img src="images/vessel-cases.jpg" data-zoom alt="Liver, portal vein and tumours in four CT studies" loading="lazy"></div>
+    <figcaption>Liver (pink), portal vein (red) and tumours (blue) in four CT studies.</figcaption>
+  </figure>
+
+  <div class="prose">
+    <h2>The method</h2>
+    <p>From 61 public CT studies we extract the portal vein tree and divide each liver into the territories that each branch supplies. Then we ask whether the positions of the lesions depend on the tree beyond what tissue volume already explains.</p>
+    <p>Every test is first run on a synthetic tree with a known answer, to learn what it can and cannot detect.</p>
+  </div>
+  <figure class="figure reveal">
+    <div class="frame"><img src="images/vessel-split.jpg" data-zoom alt="Four livers divided into two parts at the first portal branching" loading="lazy"></div>
+    <figcaption>Four livers divided at the first major portal branching. The two parts differ greatly in volume from one liver to the next.</figcaption>
+  </figure>
+  <figure class="figure reveal">
+    <div class="frame"><img src="images/vessel-phantom.jpg" data-zoom alt="A synthetic vessel tree and its rasterised version" loading="lazy"></div>
+    <figcaption>A synthetic vessel tree with known properties (left) and the same tree as the analysis sees it (right). It is used to calibrate the tests.</figcaption>
+  </figure>
+
+  <div class="prose">
+    <h2>What it shows</h2>
+    <p>We found no detectable effect of tree geometry beyond tissue volume, within the measured sensitivity of the tests. A larger territory holds more lesions. So far, that is enough.</p>
+  </div>
+  <div class="links">
+    <a class="ghost" href="https://doi.org/10.5281/zenodo.23306784" target="_blank" rel="noopener">Analysis code on Zenodo</a>
+  </div>
+  <p class="note">Images on this page are derived from public, anonymised data (Medical Segmentation Decathlon, hepatic vessel task) and are shared under CC BY-SA 4.0.</p>
+</section>
+
+<!-- ---------- AI / MESHES ---------- -->
+<section class="page" data-route="projects/meshes">
+  <a class="back" href="#/projects">Projects</a>
+  <p class="eyebrow">AI for mathematics · In design</p>
+  <h1>From equations to meshes</h1>
+  <p class="lead">Can a language model read a differential equation the way an expert does?</p>
+
+  <div class="prose">
+    <h2>The question</h2>
+    <p>To solve a differential equation on a computer you need a mesh. A good mesh is fine where the solution changes sharply and coarse everywhere else. Finding those places in advance takes an expert, a pencil, and a scale analysis.</p>
+  </div>
+  <figure class="figure narrow reveal">
+    <div class="panel"><svg class="sch" viewBox="0 0 440 250" role="img" aria-label="A solution with a sharp layer near one wall, and a mesh refined there">
+    <line class="axis" x1="30" y1="190" x2="410" y2="190"/>
+    <line class="axis" x1="410" y1="44" x2="410" y2="190"/>
+    <path class="s" d="M30,74 C180,72 300,70 350,78 C385,86 402,132 410,190"/>
+    <g class="tick">
+      <line x1="30" y1="190" x2="30" y2="204"/><line x1="95" y1="190" x2="95" y2="204"/>
+      <line x1="152" y1="190" x2="152" y2="204"/><line x1="202" y1="190" x2="202" y2="204"/>
+      <line x1="245" y1="190" x2="245" y2="204"/><line x1="282" y1="190" x2="282" y2="204"/>
+      <line x1="313" y1="190" x2="313" y2="204"/><line x1="339" y1="190" x2="339" y2="204"/>
+      <line x1="360" y1="190" x2="360" y2="204"/><line x1="377" y1="190" x2="377" y2="204"/>
+      <line x1="390" y1="190" x2="390" y2="204"/><line x1="399" y1="190" x2="399" y2="204"/>
+      <line x1="405" y1="190" x2="405" y2="204"/><line x1="410" y1="190" x2="410" y2="204"/>
+    </g>
+    <text x="34" y="60">solution</text>
+    <text class="strong" x="404" y="36" text-anchor="end">sharp layer</text>
+    <text x="30" y="230">few mesh points here</text>
+    <text x="410" y="230" text-anchor="end">many here</text>
+  </svg></div>
+    <figcaption>A sharp layer: the solution changes quickly near one wall. A good mesh puts its points there.</figcaption>
+  </figure>
+
+  <div class="prose">
+    <h2>The idea</h2>
+    <p>We ask a large language model to do the scale analysis. It reads the problem as plain text and states where the sharp features are, how thin they are, and when that statement holds. The model never draws the mesh. Its statement is checked by symbolic code, and audited rules turn it into mesh sizes.</p>
+  </div>
+  <ol class="flow reveal">
+    <li><b>Problem</b><span>Equation, data and tolerance, as plain text.</span></li>
+    <li class="ai"><b>Scale analysis</b><span>The language model. The only AI step.</span></li>
+    <li><b>Feature card</b><span>Where it is sharp, how thin, when valid.</span></li>
+    <li><b>Audit</b><span>Symbolic checks of every claim.</span></li>
+    <li><b>Sizing rules</b><span>One rule per feature, then combined.</span></li>
+    <li><b>Mesh</b><span>Fine only where it is needed.</span></li>
+  </ol>
+
+  <div class="prose">
+    <h2>Where it stands</h2>
+    <p>The pipeline is designed and the parts without AI are built. We are now testing the central question: on which problems does a language model do better than a table of formulas?</p>
+  </div>
+</section>
+
+<!-- ---------- ATRIUM ---------- -->
+<section class="page" data-route="projects/atrium">
+  <a class="back" href="#/projects">Projects</a>
+  <p class="eyebrow">Cardiac electrophysiology · Industry project</p>
+  <h1>A virtual atrium</h1>
+  <p class="lead">Simulating how electrical waves travel through the heart.</p>
+
+  <div class="prose">
+    <h2>The question</h2>
+    <p>In an atrial arrhythmia, the electrical wave that drives each heartbeat takes a wrong path, often around scar tissue. Clinicians map the atrium with a catheter. A simulation built on such a map lets us test ideas about scar and conduction that cannot be tested in a patient.</p>
+
+    <h2>The work</h2>
+    <p>I did this work at Synvoma Health Tech, where I was responsible for building the solvers. I built a surface model of the heart muscle and used it to simulate how the tissue responds to electrical stimulation.</p>
+    <p>The project grew in four stages, each one built on the last.</p>
+  </div>
+  <ol class="flow four reveal">
+    <li><b>Reference solver</b><span>Finite elements. Accurate, but slow.</span></li>
+    <li><b>Fast solver</b><span>Finite differences. Quick enough to run many times.</span></li>
+    <li><b>Tissue properties</b><span>Conductivity inferred from measured conduction speed.</span></li>
+    <li><b>Stimulation</b><span>Premature beats test whether a circulating wave can start.</span></li>
+  </ol>
+  <figure class="figure reveal">
+    <div class="frame"><img src="images/atrium-pacing.jpg" data-zoom alt="Simulated activation times for three pacing sites" loading="lazy"></div>
+    <figcaption>Simulated activation times in a left atrium, paced from three different sites on the same model tissue.</figcaption>
+  </figure>
+
+  <div class="prose">
+    <h2>What it shows</h2>
+    <p>With scar regions added to the model, a premature beat can reroute the wave so that it circulates around them. This is the mechanism behind many arrhythmias. The work is a demonstration of mechanism, not a clinical tool.</p>
+  </div>
+  <figure class="figure reveal">
+    <div class="frame"><img src="images/atrium-reentry.jpg" data-zoom alt="Activation maps for a regular beat and a premature beat" loading="lazy"></div>
+    <figcaption>Left: a regular beat. Right: a premature beat; the wave is rerouted around the scar regions (dark). The scars are model constructs.</figcaption>
+  </figure>
+</section>
+
+<!-- ======================= BEYOND ======================= -->
+<section class="page" data-route="beyond">
+  <p class="eyebrow">Beyond research</p>
+  <h1>The lighter side.</h1>
+  <p class="statement">Research demands rigour. But I do not enjoy an atmosphere that is tense, heavy or over-sensitive. <span>So here are a few things I like. If we share a hobby, or you simply find me interesting, we can be friends. No research purpose required.</span></p>
+
+  <div class="block prose" data-anchor="hobbies">
+    <h2>Hobbies</h2>
+    <p>I have no great talent for sport, but I play a lot of it: basketball, table tennis, badminton. Basketball most of all. It was very nearly my favourite thing to do in high school. My favourite player is LeBron James, especially in the years after he returned to Cleveland.</p>
+    <p>Apart from sport and research, I play a lot of video games. With friends, mostly League of Legends, Counter-Strike, Valorant and Overwatch. On my own, the Civilization series takes most of my time. It gives me the feeling of commanding a grand strategy.</p>
+  </div>
+
+  <div class="block" data-anchor="facts">
+    <h2>Some “odd” facts about me</h2>
+    <div class="facts">
+      <article class="reveal"><b>01</b><p>I loved basketball. Then, in my last year of high school, I badly injured my ankle. This is probably the main reason I never made it to the NBA. <span class="aside">(I am joking.)</span> I have played far less since. To be fair, becoming lazy at university also played a part.</p></article>
+      <article class="reveal"><b>02</b><p>At about fourteen, I very nearly became a professional League of Legends player. <span class="aside">(I am not joking.)</span></p></article>
+      <article class="reveal"><b>03</b><p>As an undergraduate I was the team leader and coach of the Counter-Strike division of our university e-sports club. I planned the training, drew up the tactics, and found tournaments for the team to play. It was a wonderful experience.</p></article>
+      <article class="reveal"><b>04</b><p>In primary school I was very good at board games: city champion in chess, and city runner-up in Chinese chess. I rarely play now. But I still think that playing face to face over tea, talking, and reviewing the game afterwards is an elegant thing to do, especially in this fast-paced age.</p></article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="lightbox" hidden><img alt=""></div>
+<script src="app.js"></script>
+</body>
+</html>
