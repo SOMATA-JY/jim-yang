@@ -38,6 +38,7 @@
           <li><a href="#/projects/waves">Advance or retreat</a></li>
           <li><a href="#/projects/vessels">Vessels and liver metastases</a></li>
           <li><a href="#/projects/meshes">From equations to meshes</a></li>
+          <li><a href="#/projects/memory">Time is not a label</a></li>
           <li><a href="#/projects/atrium">A virtual atrium</a></li>
         </ul></div>
       </li>
@@ -144,6 +145,22 @@
   </svg></div>
       <div class="body"><small>AI for mathematics</small><b>From equations to meshes</b><span>Can a language model read an equation like an expert?</span></div>
     </a>
+    <a class="card" href="#/projects/memory">
+      <div class="media plain"><svg class="sch" viewBox="0 0 440 250" role="img" aria-label="Schematic of a clock hand turning from an old fact to a current fact">
+    <line class="axis" x1="50" y1="200" x2="390" y2="200"/>
+    <path class="edge" style="fill:none" d="M80,200 A140,140 0 0 1 360,200"/>
+    <g opacity="0.3">
+      <line class="arrow" x1="220" y1="200" x2="142.2" y2="122.2"/>
+      <polygon class="head" points="132.3,112.3 146.4,118 138,126.4"/>
+    </g>
+    <line class="arrow" x1="220" y1="200" x2="290.7" y2="115.7"/>
+    <polygon class="head" points="299.7,105 295.3,119.6 286.1,111.8"/>
+    <circle cx="121" cy="101" r="8" style="fill:var(--c-blue)"/>
+    <circle cx="310" cy="92.8" r="8" style="fill:var(--c-red)"/>
+    <circle class="head" cx="220" cy="200" r="5"/>
+  </svg></div>
+      <div class="body"><small>AI memory</small><b>Time is not a label</b><span>A memory for AI agents that knows which facts expire.</span></div>
+    </a>
     <a class="card" href="#/projects/atrium">
       <div class="media light"><img src="images/thumb-atrium.jpg" alt=""></div>
       <div class="body"><small>Cardiac modelling</small><b>A virtual atrium</b><span>Electrical waves in a model of the heart.</span></div>
@@ -228,7 +245,7 @@
 <!-- ---------- ODE-OPT ---------- -->
 <section class="page" data-route="projects/metastasis">
   <a class="back" href="#/projects">Projects</a>
-  <p class="eyebrow">Mathematical model · Book chapter, in revision</p>
+  <p class="eyebrow">Mathematical model</p>
   <h1>Where metastases land</h1>
   <p class="lead">Why each cancer prefers certain organs.</p>
 
@@ -265,9 +282,13 @@
 <!-- ---------- VIRUS ---------- -->
 <section class="page" data-route="projects/virus">
   <a class="back" href="#/projects">Projects</a>
-  <p class="eyebrow">Agent-based modelling · Manuscript in preparation</p>
+  <p class="eyebrow">Agent-based modelling</p>
   <h1>Cancer-killing viruses, cell by cell</h1>
   <p class="lead">Why virus therapy can stall, and what a tumour’s dead core has to do with it.</p>
+  <figure class="figure reveal">
+    <div class="frame"><img src="images/virus-cutaway.jpg" data-zoom alt="Cut-away views of a tumour with three layers" loading="lazy"></div>
+    <figcaption>A tumour cut open: an outer rim where the virus can multiply (red), a starved band (blue) and a dead core (grey). Left: the idealised geometry. Right: the same structure in a cell-by-cell simulation.</figcaption>
+  </figure>
 
   <div class="prose">
     <h2>The question</h2>
@@ -323,7 +344,7 @@
 <!-- ---------- SIS–ALLEE ---------- -->
 <section class="page" data-route="projects/waves">
   <a class="back" href="#/projects">Projects</a>
-  <p class="eyebrow">Mathematical biology · Manuscript in preparation</p>
+  <p class="eyebrow">Mathematical biology</p>
   <h1>When infection turns expansion into retreat</h1>
   <p class="lead">A population spreads. A disease spreads inside it. Which one wins at the edge?</p>
 
@@ -376,7 +397,7 @@
 <!-- ---------- VESSELS ---------- -->
 <section class="page" data-route="projects/vessels">
   <a class="back" href="#/projects">Projects</a>
-  <p class="eyebrow">Medical image analysis · Submitted to PLOS ONE</p>
+  <p class="eyebrow">Medical image analysis</p>
   <h1>Do blood vessels decide where liver metastases grow?</h1>
   <p class="lead">Testing the simplest explanation first.</p>
 
@@ -463,6 +484,36 @@
     <h2>Where it stands</h2>
     <p>The pipeline is designed and the parts without AI are built. We are now testing the central question: on which problems does a language model do better than a table of formulas?</p>
   </div>
+</section>
+
+<!-- ---------- MEMORY (RoMem) ---------- -->
+<section class="page" data-route="projects/memory">
+  <a class="back" href="#/projects">Projects</a>
+  <p class="eyebrow">AI memory · Knowledge graphs</p>
+  <h1>Time is not a label</h1>
+  <p class="lead">A memory for AI agents that knows which facts expire.</p>
+
+  <div class="prose">
+    <h2>The question</h2>
+    <p>An AI agent that runs for months needs a long-term memory. Many systems store it as a knowledge graph: a list of facts such as “Obama, born in, Hawaii”. Some facts never change. Others expire: a country gets a new president. Most systems attach time to a fact as a label, and a label cannot tell the two kinds apart. Sorting by date buries old facts that are still true. Deleting old facts destroys history. Asking a language model to judge every new fact is slow and costly.</p>
+
+    <h2>The idea</h2>
+    <p>RoMem makes time part of the geometry. Facts live in a vector space, and time acts on them as a rotation. A small network, the Semantic Speed Gate, reads the name of a relation and sets how fast it turns: “born in” stays still, “president of” turns quickly. An outdated fact drifts out of alignment with the question, so the fact that was true at the time asked about ranks first. Nothing is deleted.</p>
+  </div>
+  <figure class="figure reveal">
+    <div class="frame"><img src="images/romem-idea.jpg" data-zoom alt="Two panels: facts rotating with time, and a gate that decides which relations rotate" loading="lazy"></div>
+    <figcaption>Left: time rotates a changing fact, and the fact that does not match the time of the question falls out of alignment. Right: the gate decides which relations rotate and which stay fixed.</figcaption>
+  </figure>
+
+  <div class="prose">
+    <h2>What it shows</h2>
+    <p>On questions that depend on time, RoMem retrieves the right fact far more often than existing memory systems. On memory that never changes, it loses nothing. It works as a module: it can replace the knowledge-graph part of an existing memory system.</p>
+  </div>
+  <figure class="figure reveal">
+    <div class="frame"><img src="images/romem-results.png" data-zoom alt="Bar chart comparing RoMem with five memory systems on three benchmarks" loading="lazy"></div>
+    <figcaption>RoMem (dark red) against five memory systems on three benchmarks: questions that depend on time (left), mixed questions (centre) and static memory (right).</figcaption>
+  </figure>
+  <p class="note">Joint work with collaborators at the University of Edinburgh and in industry.</p>
 </section>
 
 <!-- ---------- ATRIUM ---------- -->
